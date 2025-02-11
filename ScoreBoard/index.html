@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Basketball Score Keeper Application">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="index.css">
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
+        </style>
+        <title>Score Keeper</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="team">
+                <h3>HOME</h3>
+                <div id="home-score-el" class="score">0</div>
+                <div class="buttons">
+                    <button id="button1-home" class="btn" onclick="plusOneHome()">+1</button>
+                    <button id="button2-home" class="btn" onclick="plusTwoHome()">+2</button>
+                    <button id="button3-home" class="btn" onclick="plusThreeHome()">+3</button>
+                </div>
+            </div>
+            <div><button id="restart-btn" onclick="resetScore()">New Game</button></div>
+            <div class="team">
+                <h3>GUEST</h3>
+                <div id="away-score-el" class="score">0</div>
+                <div class="buttons">
+                    <button id="button1-guest" class="btn" onclick="plusOneAway()">+1</button>
+                    <button id="button2-guest" class="btn" onclick="plusTwoAway()">+2</button>
+                    <button id="button3-guest" class="btn" onclick="plusThreeAway()">+3</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
